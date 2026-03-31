@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praias do Ceará</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="carregouPagina()" onunload="saiuPagina()">
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="topo">
+      <h1>Descubra as Praias do Ceará</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#praias">Praias</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção Principal -->
+  <section id="home" class="hero">
+    <h2>Bem-vindo ao Paraíso!</h2>
+    <p>Explore as praias mais incríveis do Ceará e planeje sua viagem.</p>
+
+    <!-- BOTÃO COM EVENTO ON -->
+    <button onclick="explorarPraias()">Explorar Praias</button>
+  </section>
+
+  <!-- Seção de Praias -->
+  <section id="praias" class="praias">
+    <h2>Algumas Praias Imperdíveis</h2>
+    <div class="cards">
+
+      <div class="card">
+        <img src="img/O_que_Fazer_na_Praia_do_Cumbuco-1199x630.webp" alt="Praia do Cumbuco">
+        <h3>Cumbuco</h3>
+        <p>Uma praia tranquila e perfeita para relaxar.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/paracuru-3.jpg" alt="Praia do Paracuru">
+        <h3>Paracuru</h3>
+        <p>Ótima para esportes aquáticos e vida noturna.</p>
+      </div>
+
+      <div class="card">
+        <img src="imagens/canoa.jpg" alt="Canoa Quebrada">
+        <h3>Canoa Quebrada</h3>
+        <p>Conhecida por suas falésias e paisagens incríveis.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato">
+    <h2>Contato</h2>
+
+    <!-- FORM COM EVENTO ON -->
+    <form id="contatoForm" onsubmit="enviarFormulario(event)">
+      <input type="text" placeholder="Seu nome">
+      <input type="email" placeholder="Seu email">
+      <textarea placeholder="Mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Praias do Ceará | Desenvolvido por Ana Jenifer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
